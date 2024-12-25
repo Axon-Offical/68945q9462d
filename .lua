@@ -7,11 +7,11 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 65 | Scripts: 11 | Modules: 0 | Tags: 0
+-- Instances: 75 | Scripts: 12 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Axon
-G2L["1"] = Instance.new("ScreenGui", gethui());
+G2L["1"] = Instance.new("ScreenGui", game:FindFirstChild('CoreGui'));
 G2L["1"]["Name"] = [[Axon]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -146,7 +146,7 @@ G2L["e"]["Size"] = UDim2.new(0, 25, 0, 25);
 G2L["e"]["BackgroundTransparency"] = 1;
 G2L["e"]["Name"] = [[Settings]];
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Position"] = UDim2.new(0.27518, 0, 0.75805, 0);
+G2L["e"]["Position"] = UDim2.new(0.27518, 0, 0.74134, 0);
 
 
 -- StarterGui.Axon.CanvasGroup.Menu.Settings.LocalScript
@@ -159,7 +159,7 @@ G2L["10"] = Instance.new("Frame", G2L["8"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["Size"] = UDim2.new(1, 0, 0, 1);
-G2L["10"]["Position"] = UDim2.new(0, 0, 0.85554, 0);
+G2L["10"]["Position"] = UDim2.new(0, 0, 0.83883, 0);
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Name"] = [[DLine]];
 G2L["10"]["BackgroundTransparency"] = 0.6;
@@ -177,7 +177,6 @@ G2L["11"]["Name"] = [[CProvider]];
 
 -- StarterGui.Axon.CanvasGroup.CProvider.Executor
 G2L["12"] = Instance.new("Frame", G2L["11"]);
-G2L["12"]["Visible"] = false;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
 G2L["12"]["Size"] = UDim2.new(0, 561, 0, 359);
@@ -189,8 +188,8 @@ G2L["12"]["Name"] = [[Executor]];
 G2L["13"] = Instance.new("Frame", G2L["12"]);
 G2L["13"]["BorderSizePixel"] = 0;
 G2L["13"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["13"]["Size"] = UDim2.new(0, 561, 0, 49);
-G2L["13"]["Position"] = UDim2.new(0, 0, 0.86351, 0);
+G2L["13"]["Size"] = UDim2.new(0, 561, 0, 56);
+G2L["13"]["Position"] = UDim2.new(0, 0, 0.84161, 0);
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Name"] = [[Controls]];
 
@@ -211,7 +210,7 @@ G2L["15"] = Instance.new("Frame", G2L["13"]);
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
 G2L["15"]["Size"] = UDim2.new(0, 112, 0, 34);
-G2L["15"]["Position"] = UDim2.new(0.01248, 0, 0.1253, 0);
+G2L["15"]["Position"] = UDim2.new(0.01248, 0, 0.16101, 0);
 G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["15"]["Name"] = [[Execute]];
 G2L["15"]["BackgroundTransparency"] = 0.7;
@@ -275,7 +274,7 @@ G2L["1b"] = Instance.new("Frame", G2L["13"]);
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
 G2L["1b"]["Size"] = UDim2.new(0, 112, 0, 34);
-G2L["1b"]["Position"] = UDim2.new(0.2246, 0, 0.1253, 0);
+G2L["1b"]["Position"] = UDim2.new(0.2246, 0, 0.16101, 0);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["Name"] = [[Clear]];
 G2L["1b"]["BackgroundTransparency"] = 0.7;
@@ -350,7 +349,7 @@ G2L["22"]["Active"] = true;
 G2L["22"]["BorderSizePixel"] = 0;
 G2L["22"]["CanvasSize"] = UDim2.new(0, 0, 75, 0);
 G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["Size"] = UDim2.new(0, 543, 0, 294);
+G2L["22"]["Size"] = UDim2.new(0, 543, 0, 284);
 G2L["22"]["Position"] = UDim2.new(0.01248, 0, 0.02265, 0);
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["22"]["ScrollBarThickness"] = 8;
@@ -368,6 +367,7 @@ G2L["23"]["TextSize"] = 16;
 G2L["23"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
 G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["MultiLine"] = true;
 G2L["23"]["ClearTextOnFocus"] = false;
 G2L["23"]["PlaceholderText"] = [[-- We wish you a happy christmas - Axon Team]];
 G2L["23"]["Size"] = UDim2.new(0, 543, 1, 0);
@@ -377,6 +377,8 @@ G2L["23"]["Text"] = [[]];
 
 -- StarterGui.Axon.CanvasGroup.CProvider.Server
 G2L["24"] = Instance.new("Frame", G2L["11"]);
+G2L["24"]["Visible"] = false;
+G2L["24"]["Active"] = true;
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
 G2L["24"]["Size"] = UDim2.new(0, 561, 0, 359);
@@ -428,6 +430,8 @@ G2L["28"] = Instance.new("LocalScript", G2L["26"]);
 
 -- StarterGui.Axon.CanvasGroup.CProvider.Settings
 G2L["29"] = Instance.new("Frame", G2L["11"]);
+G2L["29"]["Visible"] = false;
+G2L["29"]["Active"] = true;
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
 G2L["29"]["Size"] = UDim2.new(0, 561, 0, 359);
@@ -650,9 +654,96 @@ G2L["40"] = Instance.new("LocalScript", G2L["3e"]);
 
 
 
--- StarterGui.Axon.CanvasGroup.LocalScript
-G2L["41"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting
+G2L["41"] = Instance.new("Frame", G2L["29"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(34, 34, 34);
+G2L["41"]["Size"] = UDim2.new(0, 539, 0, 38);
+G2L["41"]["Position"] = UDim2.new(0.01783, 0, 0.58217, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Name"] = [[Setting]];
 
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["41"]);
+G2L["42"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.UIStroke
+G2L["43"] = Instance.new("UIStroke", G2L["41"]);
+G2L["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["43"]["Color"] = Color3.fromRGB(63, 63, 63);
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextLabel
+G2L["44"] = Instance.new("TextLabel", G2L["41"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["TextSize"] = 16;
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["Size"] = UDim2.new(0, 303, 0, 19);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[Key]];
+G2L["44"]["Position"] = UDim2.new(0.02198, 0, 0.24421, 0);
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextButton
+G2L["45"] = Instance.new("TextButton", G2L["41"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["AutoButtonColor"] = false;
+G2L["45"]["TextTransparency"] = 1;
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(53, 53, 53);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Position"] = UDim2.new(0.93321, 0, 0.15789, 0);
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextButton.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+G2L["46"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextButton.LocalScript
+G2L["47"] = Instance.new("LocalScript", G2L["45"]);
+
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextBox
+G2L["48"] = Instance.new("TextBox", G2L["41"]);
+G2L["48"]["CursorPosition"] = -1;
+G2L["48"]["TextColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(53, 53, 53);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["ClearTextOnFocus"] = false;
+G2L["48"]["PlaceholderText"] = [[XXXXXXXXXXXXXXXXXXXX]];
+G2L["48"]["Size"] = UDim2.new(0, 174, 0, 25);
+G2L["48"]["Position"] = UDim2.new(0.5974, 0, 0.15789, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[]];
+
+
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextBox.UICorner
+G2L["49"] = Instance.new("UICorner", G2L["48"]);
+G2L["49"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.Axon.CanvasGroup.LocalScript
+G2L["4a"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.Axon.IsKey
+G2L["4b"] = Instance.new("BoolValue", G2L["1"]);
+G2L["4b"]["Name"] = [[IsKey]];
 
 
 -- StarterGui.Axon.CanvasGroup.Topbar.Close.LocalScript
@@ -752,8 +843,17 @@ task.spawn(C_f);
 -- StarterGui.Axon.CanvasGroup.CProvider.Executor.Controls.Execute.TextButton.LocalScript
 local function C_1a()
 local script = G2L["1a"];
+	local isReady = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.IsKey
+	
 	script.Parent.Activated:Connect(function()
-		loadstring(script.Parent.Parent.Parent.Parent.Editor.ScrollingFrame.TextBox.Text)()
+		if isReady.Value == true then
+			loadstring(script.Parent.Parent.Parent.Parent.Editor.ScrollingFrame.TextBox.Text)()
+		else
+			game:GetService('StarterGui'):SetCore('SendNotification', {
+				Title = "[AXON]";
+				Text = "Activate user product"
+			})
+		end
 	end)
 	
 	script.Parent.MouseEnter:Connect(function()
@@ -904,9 +1004,79 @@ local script = G2L["40"];
 	end)
 end;
 task.spawn(C_40);
+-- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextButton.LocalScript
+local function C_47()
+local script = G2L["47"];
+	local TS = game:GetService('TweenService')
+	local isSelected = false
+	local Keys = {
+		"AbCdEfGhIjKlMnOpQrSt";
+		"XyZaBcDeFgHiJkLmNoPq";
+		"QrStUvWxYzAbCdEfGhIj";
+		"KlMnOpQrStUvWxYzAbCd";
+		"EfGhIjKlMnOpQrStUvWx";
+		"YzAbCdEfGhIjKlMnOpQr";
+		"StUvWxYzAbCdEfGhIjKl";
+		"MnOpQrStUvWxYzAbCdEf";
+		"GhIjKlMnOpQrStUvWxYz";
+		"AbCdEfGhIjKlMnOpQrSt";
+		"XyZaBcDeFgHiJkLmNoPq";
+		"QrStUvWxYzAbCdEfGhIj";
+		"KlMnOpQrStUvWxYzAbCd";
+		"EfGhIjKlMnOpQrStUvWx";
+		"YzAbCdEfGhIjKlMnOpQr";
+		"StUvWxYzAbCdEfGhIjKl";
+		"MnOpQrStUvWxYzAbCdEf";
+		"GhIjKlMnOpQrStUvWxYz";
+		"AbCdEfGhIjKlMnOpQrSt";
+		"XyZaBcDeFgHiJkLmNoPq";
+		"QrStUvWxYzAbCdEfGhIj";
+		"KlMnOpQrStUvWxYzAbCd";
+		"EfGhIjKlMnOpQrStUvWx";
+		"YzAbCdEfGhIjKlMnOpQr";
+		"StUvWxYzAbCdEfGhIjKl";
+	}
+	
+	script.Parent.MouseEnter:Connect(function()
+		if isSelected == false then
+			game:GetService('TweenService'):Create(script.Parent, TweenInfo.new(.5), {BackgroundColor3 = Color3.fromRGB(74, 74, 74)}):Play()
+		end
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		if isSelected == false then
+			game:GetService('TweenService'):Create(script.Parent, TweenInfo.new(.5), {BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		end
+	end)
+	
+	script.Parent.Activated:Connect(function()
+		isSelected = not isSelected
+		
+		if isSelected == true then
+			game:GetService('TweenService'):Create(script.Parent, TweenInfo.new(.5), {BackgroundColor3 = Color3.fromRGB(179, 255, 170)}):Play()
+			for _,v in pairs(Keys) do
+				if script.Parent.Parent.TextBox.Text == v then
+					script.Parent.Parent.Parent.Parent.Parent.Parent.IsKey.Value = true
+					game:GetService('StarterGui'):SetCore('SendNotification', {
+						Title = "[AXON]";
+						Text = "User product was activated"
+					})
+				end
+			end
+		else
+			game:GetService('TweenService'):Create(script.Parent, TweenInfo.new(.5), {BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.IsKey.Value = false
+			game:GetService('StarterGui'):SetCore('SendNotification', {
+				Title = "[AXON]";
+				Text = "User product was deactivated"
+			})
+		end
+	end)
+end;
+task.spawn(C_47);
 -- StarterGui.Axon.CanvasGroup.LocalScript
-local function C_41()
-local script = G2L["41"];
+local function C_4a()
+local script = G2L["4a"];
 	local UIS = game:GetService("UserInputService")
 	UIS.InputBegan:Connect(function(i, p)
 		if p then return end
@@ -975,6 +1145,6 @@ local script = G2L["41"];
 		Text = "Press [DELETE] to open the UI"
 	})
 end;
-task.spawn(C_41);
+task.spawn(C_4a);
 
 return G2L["1"], require;
