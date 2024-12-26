@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.Axon
-G2L["1"] = Instance.new("ScreenGui", game:FindFirstChild("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:FindFirstChild('CoreGui'));
 G2L["1"]["Name"] = [[Axon]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -352,13 +352,12 @@ G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["22"]["Size"] = UDim2.new(0, 543, 0, 284);
 G2L["22"]["Position"] = UDim2.new(0.01248, 0, 0.02265, 0);
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["ScrollBarThickness"] = 0;
+G2L["22"]["ScrollBarThickness"] = 10;
 G2L["22"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Axon.CanvasGroup.CProvider.Executor.Editor.ScrollingFrame.TextBox
 G2L["23"] = Instance.new("TextBox", G2L["22"]);
-G2L["23"]["CursorPosition"] = -1;
 G2L["23"]["TextColor3"] = Color3.fromRGB(179, 179, 179);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["TextXAlignment"] = Enum.TextXAlignment.Left;
