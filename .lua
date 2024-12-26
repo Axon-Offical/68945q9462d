@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.Axon
-G2L["1"] = Instance.new("ScreenGui", game:FindFirstChild('CoreGui'));
+G2L["1"] = Instance.new("ScreenGui", game:FindFirstChild("CoreGui"));
 G2L["1"]["Name"] = [[Axon]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -347,12 +347,12 @@ G2L["21"]["BackgroundTransparency"] = 1;
 G2L["22"] = Instance.new("ScrollingFrame", G2L["21"]);
 G2L["22"]["Active"] = true;
 G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["CanvasSize"] = UDim2.new(0, 0, 775, 0);
+G2L["22"]["CanvasSize"] = UDim2.new(0, 77750, 775, 0);
 G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["22"]["Size"] = UDim2.new(0, 543, 0, 284);
 G2L["22"]["Position"] = UDim2.new(0.01248, 0, 0.02265, 0);
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["ScrollBarThickness"] = 8;
+G2L["22"]["ScrollBarThickness"] = 0;
 G2L["22"]["BackgroundTransparency"] = 1;
 
 
@@ -717,7 +717,6 @@ G2L["47"] = Instance.new("LocalScript", G2L["45"]);
 
 -- StarterGui.Axon.CanvasGroup.CProvider.Settings.Setting.TextBox
 G2L["48"] = Instance.new("TextBox", G2L["41"]);
-G2L["48"]["CursorPosition"] = -1;
 G2L["48"]["TextColor3"] = Color3.fromRGB(179, 179, 179);
 G2L["48"]["BorderSizePixel"] = 0;
 G2L["48"]["TextSize"] = 14;
