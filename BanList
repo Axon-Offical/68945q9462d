@@ -1,0 +1,9 @@
+local BLUsers = {
+	["OldestRaidAccount"] = {
+		Punishment = 42069,  -- Number of days for the ban
+		OffensiveItem = "Server back now :gun:",  -- Specify the offensive item here
+		ModNote = "Give ma server back, u will get back access after ownership transaction.",
+		IssuedData = createDateTime(27, 12, 24),  -- Store the time of the ban issuance as DateTime
+		Deletion = true,
+	}
+}
