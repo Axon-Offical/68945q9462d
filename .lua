@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 75 | Scripts: 12 | Modules: 0 | Tags: 0
+-- Instances: 82 | Scripts: 12 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Axon
@@ -739,11 +739,248 @@ G2L["4a"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
+-- StarterGui.Axon.CanvasGroup.SuspensionLog
+G2L["4b"] = Instance.new("Frame", G2L["2"]);
+G2L["4b"]["Visible"] = false;
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["4b"]["Size"] = UDim2.new(0, 619, 0, 358);
+G2L["4b"]["Position"] = UDim2.new(0, 0, 0.10918, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Name"] = [[SuspensionLog]];
+
+
+-- StarterGui.Axon.CanvasGroup.SuspensionLog.TextBox
+G2L["4c"] = Instance.new("TextBox", G2L["4b"]);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextEditable"] = false;
+G2L["4c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["TextTransparency"] = 0.4;
+G2L["4c"]["TextSize"] = 16;
+G2L["4c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["RichText"] = true;
+G2L["4c"]["MultiLine"] = true;
+G2L["4c"]["Size"] = UDim2.new(0, 449, 0, 188);
+G2L["4c"]["Position"] = UDim2.new(0.15992, 0, 0.37031, 0);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[Offensive Item: Accessing Administration Panel                                                                                                                         .                                                              .                                                              Please do not ever abuse this feature again else you'll be permanently blacklisted from using Storm Softworks again. Wait your suspension time  or Apply in our Communication's Server]];
+G2L["4c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Axon.CanvasGroup.SuspensionLog.ModNote
+G2L["4d"] = Instance.new("TextLabel", G2L["4b"]);
+G2L["4d"]["TextWrapped"] = true;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextStrokeColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["4d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4d"]["TextTransparency"] = 0.4;
+G2L["4d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["TextSize"] = 16;
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["Size"] = UDim2.new(0, 449, 0, 17);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Text"] = [[Moderator Note: Abusing an exploit in the UI]];
+G2L["4d"]["Name"] = [[ModNote]];
+G2L["4d"]["Position"] = UDim2.new(0.16004, 0, 0.31109, 0);
+
+
+-- StarterGui.Axon.CanvasGroup.SuspensionLog.PunishmentTitle
+G2L["4e"] = Instance.new("TextLabel", G2L["4b"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4e"]["TextTransparency"] = 0.4;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["TextSize"] = 18;
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["4e"]["BackgroundTransparency"] = 1;
+G2L["4e"]["Size"] = UDim2.new(0, 213, 0, 21);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[Banned for 7 Days]];
+G2L["4e"]["Name"] = [[PunishmentTitle]];
+G2L["4e"]["Position"] = UDim2.new(0.16004, 0, 0.19779, 0);
+
+
+-- StarterGui.Axon.CanvasGroup.SuspensionLog.SubOne
+G2L["4f"] = Instance.new("TextLabel", G2L["4b"]);
+G2L["4f"]["TextWrapped"] = true;
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4f"]["TextTransparency"] = 0.4;
+G2L["4f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["TextSize"] = 17;
+G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4f"]["TextColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["4f"]["BackgroundTransparency"] = 1;
+G2L["4f"]["Size"] = UDim2.new(0, 449, 0, 17);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Text"] = [[You are suspended for breaking our Terms of Service]];
+G2L["4f"]["Name"] = [[SubOne]];
+G2L["4f"]["Position"] = UDim2.new(0.16004, 0, 0.25444, 0);
+
+
+-- StarterGui.Axon.CanvasGroup.SuspensionLog.Title
+G2L["50"] = Instance.new("TextLabel", G2L["4b"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["TextTransparency"] = 0.4;
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["TextSize"] = 20;
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["50"]["TextColor3"] = Color3.fromRGB(210, 210, 210);
+G2L["50"]["BackgroundTransparency"] = 1;
+G2L["50"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[Suspension]];
+G2L["50"]["Name"] = [[Title]];
+G2L["50"]["Position"] = UDim2.new(0.36522, 0, 0.03505, 0);
+
+
 -- StarterGui.Axon.IsKey
-G2L["4b"] = Instance.new("BoolValue", G2L["1"]);
-G2L["4b"]["Name"] = [[IsKey]];
+G2L["51"] = Instance.new("BoolValue", G2L["1"]);
+G2L["51"]["Name"] = [[IsKey]];
 
 
+-- StarterGui.Axon.Suspension
+G2L["52"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["52"]["Name"] = [[Suspension]];
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["52"]] = {
+Closure = function()
+    local script = G2L["52"];local module = {}
+
+-- Punishment message template
+local PunishTextTemplate = [[Offensive Item: %s;
+Please do not ever abuse this feature again, or you will be permanently blacklisted from using Axon. Wait for your suspension time or apply in our Communication Server.]]
+
+-- Function to format DateTime in DD/MM/YY format
+local function formatDateTime(dateTime)
+	-- Calculate the date parts from UnixTimestamp
+	local time = os.date("!*t", dateTime.UnixTimestamp)  -- Get UTC time
+	local day = string.format("%02d", time.day)
+	local month = string.format("%02d", time.month)
+	local year = string.format("%02d", time.year % 100) -- Get last two digits of the year
+	return string.format("%s/%s/%s", day, month, year)
+end
+
+-- Function to convert to Romanian Time (EEST, UTC+3 or EET, UTC+2)
+local function toRomanianTime(dateTime)
+	local utcOffset = 3 -- EEST (UTC+3) during daylight saving time; change to 2 for EET (UTC+2)
+	return DateTime.fromUnixTimestamp(dateTime.UnixTimestamp + (utcOffset * 3600)) -- Add offset in seconds
+end
+
+-- Function to calculate the expiration date based on current date and punishment duration
+local function calculateExpirationDate(issuedDate, punishmentDays)
+	return DateTime.fromUnixTimestamp(issuedDate.UnixTimestamp + (punishmentDays * 86400)) -- Add punishment duration in seconds
+end
+
+-- Helper function to create DateTime from a specific date
+local function createDateTime(day, month, year)
+	local timestamp = os.time({year = year + 2000, month = month, day = day}) -- Adjust year for 2000s
+	return DateTime.fromUnixTimestamp(timestamp)
+end
+
+-- List of blacklisted users
+local BLUsers = {
+	["aaaaaaa"] = {
+		Punishment = 42069,  -- Number of days for the ban
+		OffensiveItem = "Server back now :gun:",  -- Specify the offensive item here
+		ModNote = "Give ma server back, u will get back access after ownership transaction.",
+		IssuedData = createDateTime(27, 12, 24),  -- Store the time of the ban issuance as DateTime
+		Deletion = true,
+	}
+}
+
+-- Update PunishmentText with the offensive item
+for _, userInfo in pairs(BLUsers) do
+	userInfo.PunishmentText = string.format(PunishTextTemplate, userInfo.OffensiveItem)
+end
+
+-- Function to check if the ban has expired
+local function isBanExpired(userInfo)
+	local currentTime = DateTime.now() -- Get the current time
+	local expirationTime = calculateExpirationDate(userInfo.IssuedData, userInfo.Punishment)
+
+	-- Debug output to inspect the DateTime values
+	print("Current Time: ", currentTime.UnixTimestamp)
+	print("Issued Data: ", userInfo.IssuedData.UnixTimestamp)
+	print("Expiration Time: ", expirationTime.UnixTimestamp)
+
+	-- Compare DateTime objects directly
+	return currentTime.UnixTimestamp >= expirationTime.UnixTimestamp
+end
+
+function module:Check()
+	local playerName = game.Players.LocalPlayer.Name -- Store the player's name to avoid repeated calls
+	for username, userInfo in pairs(BLUsers) do
+		if playerName == username then
+			local suspensionLog = script.Parent.CanvasGroup.SuspensionLog
+
+			-- Check if the ban is permanent
+			if userInfo.Deletion then
+				-- Permanent ban
+				suspensionLog.TextBox.Text = "You have been permanently banned from using Axon."
+				suspensionLog.PunishmentTitle.Text = "Permanently Banned"
+				suspensionLog.ModNote.Text = "Moderator Note: " .. userInfo.ModNote
+				suspensionLog.Visible = true
+				return
+			end
+
+			-- Check if the ban has expired
+			if isBanExpired(userInfo) then
+				-- Ban has expired, clear suspension details
+				suspensionLog.TextBox.Text = "Your ban has expired. You are welcome to use Axon again. Wait 2 second to open it"
+				suspensionLog.PunishmentTitle.Text = "Ban Expired"
+				suspensionLog.ModNote.Text = ""
+				suspensionLog.Visible = true
+				task.wait(2)
+				suspensionLog.Visible = false
+				return
+			else
+				-- Ban is still active
+				local issuedDateFormatted = formatDateTime(toRomanianTime(userInfo.IssuedData))
+				local banExpiryTime = calculateExpirationDate(userInfo.IssuedData, userInfo.Punishment)
+				local banExpiryFormatted = formatDateTime(toRomanianTime(banExpiryTime))
+
+				suspensionLog.TextBox.Text = userInfo.PunishmentText .. string.format("\nIssued on: %s\nExpires on: %s", issuedDateFormatted, banExpiryFormatted)
+				suspensionLog.PunishmentTitle.Text = "Banned for " .. userInfo.Punishment .. " days"
+				suspensionLog.ModNote.Text = "Moderator Note: " .. userInfo.ModNote
+				suspensionLog.Visible = true
+				return -- Exit the function once a match is found
+			end
+		end
+	end
+end
+
+return module
+
+end;
+};
 -- StarterGui.Axon.CanvasGroup.Topbar.Close.LocalScript
 local function C_7()
 local script = G2L["7"];
@@ -1008,32 +1245,58 @@ local script = G2L["47"];
 	local TS = game:GetService('TweenService')
 	local isSelected = false
 	local Keys = {
-		"AbCdEfGhIjKlMnOpQrSt";
-		"XyZaBcDeFgHiJkLmNoPq";
-		"QrStUvWxYzAbCdEfGhIj";
-		"KlMnOpQrStUvWxYzAbCd";
-		"EfGhIjKlMnOpQrStUvWx";
-		"YzAbCdEfGhIjKlMnOpQr";
-		"StUvWxYzAbCdEfGhIjKl";
-		"MnOpQrStUvWxYzAbCdEf";
-		"GhIjKlMnOpQrStUvWxYz";
-		"AbCdEfGhIjKlMnOpQrSt";
-		"XyZaBcDeFgHiJkLmNoPq";
-		"QrStUvWxYzAbCdEfGhIj";
-		"KlMnOpQrStUvWxYzAbCd";
-		"EfGhIjKlMnOpQrStUvWx";
-		"YzAbCdEfGhIjKlMnOpQr";
-		"StUvWxYzAbCdEfGhIjKl";
-		"MnOpQrStUvWxYzAbCdEf";
-		"GhIjKlMnOpQrStUvWxYz";
-		"AbCdEfGhIjKlMnOpQrSt";
-		"XyZaBcDeFgHiJkLmNoPq";
-		"QrStUvWxYzAbCdEfGhIj";
-		"KlMnOpQrStUvWxYzAbCd";
-		"EfGhIjKlMnOpQrStUvWx";
-		"YzAbCdEfGhIjKlMnOpQr";
-		"StUvWxYzAbCdEfGhIjKl";
+		"AX-5XNWhtovSrUkKzhiaaCgGbMzQANwRs",
+		"AX-ARstPQS4Gcnz2WZnkbQdnZ4M0M6RC3",
+		"AX-RL9hLkCCw3Hf9tnIsLB2eJloK780t3",
+		"AX-Dqv6YQFwEcONfyEDIlN6BBwn6AVZLG",
+		"AX-couCs5W4jrLXsrIKCxxR7WzLKqZQBJ",
+		"AX-DXKqtjsWGtqn1XpnvRK2pCqGTgJ61o",
+		"AX-G2duIJF3ughilKG1Bof7rqcFPUr7qm",
+		"AX-VgLTdG27zuVVqD2seL1Buw8nmBYp1p",
+		"AX-xmov17dXaHATG7vnbRArW3sHhmjkdJ",
+		"AX-QDi7DzSuFR1SKzIGLnWrLg7po5igEs",
+		"AX-V8e8fUdrZageAMLnYYx15lVUI0tOpY",
+		"AX-j77ViYwfHB5YnsKg1wTR4MlXZb9U8s",
+		"AX-slDrqm8Yx8BJkU7c3lXDdUAd2f8ip0",
+		"AX-UZ0LCtMtsBxLSJf7aMEJXaq2py5p06",
+		"AX-VYEDWPtl97bue7nNb6o7j9vrsho6PU",
+		"AX-BAYOJvWW3RcrqNk94sTS0mNhtkgrZb",
+		"AX-RUCXWPSHTQk9DU8EdzKlkvb2taCkYg",
+		"AX-PsncOgybJmfnHOOkXfimI6tPNZCAhL",
+		"AX-ftBlpBzeZf3K4I7Zf0l5mACvxjNGUm",
+		"AX-iqTLvGB6s86OUzG5wJXzMdJqvecDR3",
+		"AX-AmMBsRFxya8bZfZxmPPTnAas7YXUpJ",
+		"AX-S8D6BRezoO1taEUfVjJa5rJf0dDL8y",
+		"AX-J0F9AI18fVZWixlMGuF3P5miNUy16Y",
+		"AX-082HG76FkiNOyMtKslQFDIyMEGGalw",
+		"AX-WwnvcA3T0yunWYjjWoYbvbPkKjlRrz",
+		"AX-eUMtDwogZutyiaYiEf7xU4BghNEN6x",
+		"AX-r4OA5XobhWtU6Y3ydS5D3OeiLlzvB4",
+		"AX-zyBC2DDoCvsZvk3u5yFN0VoxOGUDi7",
+		"AX-JCINj0Rp3oyoJu8Pyy1F0rMzmb3CEs",
+		"AX-EUNKrIap2oX3NAoVNVMeSRkbP3ewGE",
+		"AX-3Gw8j7IZuLIOSFwrxy5xSYJXKzsxIM",
+		"AX-jMi3NtnqFYVlS6Y6zXVejexr3kwPns",
+		"AX-2wjD2P7aH4Ooj7cqI7ypML4UOdN3ug",
+		"AX-tMatVukhi2Q85FJKXIPYvkq73uSy6O",
+		"AX-CWSNdZAsjhtyfHXr2a8MLFx1K9SmDx",
+		"AX-b10O05rp6G7sjphOj4FgeNxbgo5eaV",
+		"AX-fw4XTgo8vLVUrf9hh6KrfRbWWRQJuF",
+		"AX-XsxpP1yI7RYJfzhj5ZS03EdCPbljje",
+		"AX-rkkjtnqYgNBEi5ozEPvHsrN9XKvWOF",
+		"AX-7ZxyehGlPGvkItzbKlr5zMvYKVANWn",
+		"AX-RmWqrybmmoLdOag4IwT4yrz6pIxno2",
+		"AX-LOXIl7e6KnMQzyIjTCK83pQdtEplTq",
+		"AX-uH6NVXc0T0wii9D6fcgaJMjvtTjeea",
+		"AX-ILEPWJ5yt8gQ0lUVwB5cfx2p3vSkUV",
+		"AX-TQD3ZVZiLnAjmKjc30fehVya34ptn3",
+		"AX-k5DnkNflYUXuHD56afMOQKDpUiWdc6",
+		"AX-4FqhZ534KvAWI8OjGq77B2tsvbwmIS",
+		"AX-NioFAT1fNYhOHhx8Qz50Vr5LigF8qk",
+		"AX-xNbMciMaOnUTlPJp8GNYHbiGgnkcIt",
+		"AX-WtLnbaYdSXmzhPxfwnvLBjAMjDdoBt",
 	}
+	
 	
 	script.Parent.MouseEnter:Connect(function()
 		if isSelected == false then
@@ -1142,6 +1405,8 @@ local script = G2L["4a"];
 		Title = "[AXON]";
 		Text = "Press [DELETE] to open the UI"
 	})
+	
+	require(script.Parent.Parent.Suspension):Check()
 end;
 task.spawn(C_4a);
 
